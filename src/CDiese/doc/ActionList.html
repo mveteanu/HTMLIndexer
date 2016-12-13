@@ -1,0 +1,131 @@
+<!--                        IGNORE THIS SECTION                            -->
+<html>
+<head>
+<title>The Code Project</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<Style>
+BODY, P, TD { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt }
+H2,H3,H4,H5 { color: #ff9900; font-weight: bold; }
+H2 { font-size: 13pt; }
+H3 { font-size: 12pt; }
+H4 { font-size: 10pt; color: black; }
+PRE { BACKGROUND-COLOR: #FBEDBB; FONT-FAMILY: "Courier New", Courier, mono; 
+      WHITE-SPACE: pre; }
+CODE { COLOR: #990000; FONT-FAMILY: "Courier New", Courier, mono; }
+</style>
+</head>
+<body bgcolor="#FFFFFF" color=#000000>
+<!-------------------------------     STEP 1      --------------------------->
+<!--  Fill in the details (CodeProject will reformat this section for you) -->
+
+<pre>
+Title:       Article Title Goes Here
+Author:      Author Name 
+Email:       author@email.com
+Environment: VC++ 5.0-6.0, NT 4.0, Win95/98
+Keywords:    Control, Dialog, MFC
+Level:       Intermediate"
+Description: An article on something-or-other
+Section      .Net
+SubSection   General
+</pre>
+
+<hr width=100% noshade>
+
+<H1>ActionLists for Windows.Forms</H1>
+
+<!-------------------------------     STEP 2      --------------------------->
+<!--  Include download and sample image information.                       --> 
+
+<ul class=download>
+<li><a href="ActionList/ActionsDemo.zip">Download demo project - 40 Kb </a></li>
+<li><a href="ActionList/CDiese.zip">Download source - 82 Kb</a></li>
+</ul>
+
+<!-------------------------------     STEP 3      --------------------------->
+<!--  Add the article text. Please use simple formatting (<h2>, <p> etc)   --> 
+
+<h2>Introduction</h2>
+<p>The .Net framework is really a nice framework, but as a programmer coming from the MFC world, I really miss some features like the 
+<code>ON_COMMAND</code>/<code>ON_UPDATE_COMMAND_UI</code> mechanism.</p>
+
+<p>This mechanism allows the decoupling of the UI and the code associated to it. It allows:
+<ul>
+<li>to automatically share the code between menus, toolbars, buttons and other controls.</li>
+<li>to reduce the amount of code needed for updating the UI.</li>
+<li>to enable/disable controls according to conditions not related to the UI (for example a connection to a database).</li>
+</ul>
+</p>
+
+<p>Unfortunately, the <code>ON_COMMAND</code>/<code>ON_UPDATE_COMMAND_UI</code> mechanism is a message base 
+mechanism which strongly relies on a specific message routing architecture. This mechanism can be reproduced in the .Net environment but it is far from being a 
+pratical solution in a RAD environment. A nice alternative is the <code>ActionList</code> component provided by <b>Delphi</b>.
+</p>
+
+<p> 
+An <code>ActionList</code> is a collection of <code>Action</code>s. Each <code>Action</code> is itself a component associated to a given task. 
+An <code>Action</code> provides the framework for:
+<ul>
+<li>excuting the task in response to an UI event.</li>
+<li>enabling/disabling, checking/unchecking the controls related to the task according to some conditions.</li>
+</ul>
+Furthermore, this mechanism can be extended in order to:
+<ul>
+<li>set the text of the controls.</li>
+<li>set the help text of the controls.</li>
+<li>show/hide the controls.</li>
+<li>set the icons associated to the controls.</li>
+<li>set the shortcut associated to the task.</li>
+</ul>
+</p>
+
+<h2>Adding actions to your project</h2>
+<p>This a simple example based on the Find Dialog of the demo application. We will add an action wich will be associated to the Find button.
+<ol>
+<li>Open your dialog in Design Mode.</li>
+<li>Add the components of the <code>CDiese</code> library to the Toolbox.<br><img src="ActionList/img1.jpg"></li>
+<li>Drag an <code>ActionList</code> on the dialog<br><img src="ActionList/img2.jpg"></li>
+<li>Edit the property <code>Actions</code> of the new <code>ActionList</code>. Add a new <code>Action</code> and set its properties.
+<br><img src="ActionList/img3.jpg"></li>
+<li>Select the action in the component editor and add an <code>EventHandler</code> for the <code>Execute</code> and <code>Update</code> events.
+<br><img src="ActionList/img4.jpg">
+<pre lang=cs>
+	private void OnUpdateFind(object sender, System.EventArgs e)
+	{
+		((CDiese.Actions.Action)sender).Enabled = _text.TextLength > 0;
+	}
+</pre>
+<pre lang=cs>
+	private void OnFind(object sender, System.EventArgs e)
+	{
+		RichTextBoxFinds mode = RichTextBoxFinds.None;
+
+		if (_bCase.Checked)
+		{
+			mode |= RichTextBoxFinds.MatchCase;
+		}
+		....
+		_RTF.Select(sel, _text.Text.Length);
+		_RTF.ScrollToCaret();
+	}
+</pre>
+</li>
+<li>Associate the action to the Find button
+<br><img src="ActionList/img5.jpg"></li>
+</ol>
+</p>
+
+<h2>Latest updates</h2>
+<ul>
+<li>4th March 2002
+<ul>
+<li>First release</li>
+</ul>
+</li>
+</ul>
+
+Serge <img src="/script/images/smiley_wink.gif" align="absmiddle">.
+
+<!-------------------------------    That's it!   --------------------------->
+</body>
+</html>

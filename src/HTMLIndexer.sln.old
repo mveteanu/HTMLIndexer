@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTMLIndexer", "HTMLIndexer.csproj", "{8E86C772-EB82-45EA-9A6D-8D1A5F07B760}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDiese", "CDiese\CDiese.csproj", "{D087C8DA-881E-49D0-A5EF-E4A71EA15567}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{8E86C772-EB82-45EA-9A6D-8D1A5F07B760}.Debug.ActiveCfg = Debug|.NET
+		{8E86C772-EB82-45EA-9A6D-8D1A5F07B760}.Debug.Build.0 = Debug|.NET
+		{8E86C772-EB82-45EA-9A6D-8D1A5F07B760}.Release.ActiveCfg = Release|.NET
+		{8E86C772-EB82-45EA-9A6D-8D1A5F07B760}.Release.Build.0 = Release|.NET
+		{D087C8DA-881E-49D0-A5EF-E4A71EA15567}.Debug.ActiveCfg = Debug|.NET
+		{D087C8DA-881E-49D0-A5EF-E4A71EA15567}.Debug.Build.0 = Debug|.NET
+		{D087C8DA-881E-49D0-A5EF-E4A71EA15567}.Release.ActiveCfg = Release|.NET
+		{D087C8DA-881E-49D0-A5EF-E4A71EA15567}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

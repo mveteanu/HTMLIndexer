@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTMLIndexer", "HTMLIndexer.csproj", "{8E86C772-EB82-45EA-9A6D-8D1A5F07B760}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDiese", "CDiese\CDiese.csproj", "{D087C8DA-881E-49D0-A5EF-E4A71EA15567}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E86C772-EB82-45EA-9A6D-8D1A5F07B760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E86C772-EB82-45EA-9A6D-8D1A5F07B760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E86C772-EB82-45EA-9A6D-8D1A5F07B760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E86C772-EB82-45EA-9A6D-8D1A5F07B760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D087C8DA-881E-49D0-A5EF-E4A71EA15567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D087C8DA-881E-49D0-A5EF-E4A71EA15567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D087C8DA-881E-49D0-A5EF-E4A71EA15567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D087C8DA-881E-49D0-A5EF-E4A71EA15567}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="HTMLIndexer">
+</Property><Property Name="Solution File" Value="d:\work\Software\HTMLIndexer_Public\HTMLIndexer.sln">
+</Property><Property Name="Date" Value="Friday, February 16, 2007">
+</Property><Property Name="Time" Value="19:53 PM">
+</Property></Properties><Event ErrorLevel="0" Project="HTMLIndexer" Source="HTMLIndexer.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="HTMLIndexer" Source="HTMLIndexer.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CDiese" Source="CDiese\CDiese.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="CDiese" Source="CDiese\CDiese.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="HTMLIndexer.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="HTMLIndexer.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="HTMLIndexer" Source="HTMLIndexer.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="CDiese" Source="CDiese\CDiese.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
