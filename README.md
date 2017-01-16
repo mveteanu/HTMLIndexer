@@ -46,3 +46,4 @@ You may now burn the CHM file on a CD, send it by email to a friend or just stor
 
 ![i06.png](img/i06.png)
 
+![Analytics](https://ga-beacon.appspot.com/UA-2402433-6/beacon.en.html)
